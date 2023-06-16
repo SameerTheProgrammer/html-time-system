@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="clock">
+        <h2 class="title">
+            Clock
+        </h2>
+        <div class="clock-container">
+            <div class="clocks">
+                <div class="digital-clock">
+                    <div id="hou"></div>
+                    <div id="min"></div>
+                    <div id="sec"></div>
+                    <div id="ampm"></div>
+                </div>
+                <div class="analog-clock">
+                    <div class="hour">
+                        <div class="hr" id="hr"></div>
+                    </div>
+                    <div class="minute">
+                        <div class="mn" id="mn"></div>
+                    </div>
+                    <div class="second">
+                        <div class="sc" id="sc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <h2 class="title">
+        Alarm
+    </h2>
+    <section class="alarm">
+
+        <div class="alarm-container ">
+            <div class="alarm-content c1">
+
+                <img src="./img/alarm.png" alt="Alarm image">
+                <h1 id="alarm-time">00:00:00 PM</h1>
+                <div class="content">
+                    <div class="column">
+                        <select name="" class="alarm-select" id="">
+                            <option value="Hours" selected hidden>Hours</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <select name="" class="alarm-select" id="">
+                            <option value="Minute" selected hidden>Minute</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <select name="" class="alarm-select" id="">
+                            <option value="Second" selected hidden>Second</option>
+                        </select>
+                    </div> 
+                    <div class="column block">
+                        <select name="" class="alarm-select" id="">
+                            <option value="AM/PM" selected hidden>AM/PM</option>
+                            <!-- <option value="PM">PM</option>
+                            <option value="AM">AM</option> -->
+                        </select>
+                    </div>
+
+                </div>
+                <div class="button">
+                    <button class="alarm-set">Set Alarm</button>
+                    <button class="alarm-stop">stop Alarm</button>
+                </div>
+
+            </div>
+            <div class="c2">
+                <h3 class="second-title">
+                    Upcoming Alarms
+                </h3>
+                
+                <ul id="upcoming-alarms-list">
+                    <li class="alarm-lap-item">
+                        <span class="alarm-time-stamp">00 : 00 : 00 PM</span>
+                        <span class="alarm-btn btn">delete</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="stopwatch">
+        <h2 class="title">
+            StopWatch
+        </h2>
+        <div class="stop">
+            <div class="stop-container">
+                <div class="stop-content">
+                    <!-- <h2>00:00:00:00</h2> -->
+                    <div class="stop-digi">
+                        <span class="ho">00 :</span>
+                        <span class="mi">00 :</span>
+                        <span class="se">00 :</span>
+                        <span class="mili">00</span>
+                    </div>
+                    
+                    <div class="button">
+                        <button id="lap-stopwatch" type="button" class="btn hidden">lap</button>
+                        <button id="start-stopwatch" type="button" class="btn ">Play</button>
+                        <button id="reset-stopwatch" type="button" class="btn hidden">reset</button>
+                    </div>
+                </div>
+                <div class="lap-container">
+                    <h3 class="second-title">
+                        Lap
+                    </h3>
+                    <ul class="laps">
+                        
+                    </ul>
+                    <button class="lap-clr btn">Clear All</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timer">
+        <h2 class="title">
+            Timer
+        </h2>
+
+        <div class="timer-container">
+            <div class="timer-content">
+
+                <select class="timer-select">
+                    <option value="Hours" selected hidden>Hours</option>
+                </select>
+                <select class="timer-select">
+                    <option value="Minute" selected hidden>Minute</option>
+                </select>
+                <select class="timer-select">
+                    <option value="Second" selected hidden>Second</option>
+                </select>
+                <div class="timer-time">
+                    <span id="ho">00 :</span>
+                    <span id="mi">00 :</span>
+                    <span id="se">00</span>
+                </div>
+                <button id="start-timerwatch" type="button" class="btn">start</button>
+                <!-- <button id="stop_watch" type="button" class="btn">stop</button> -->
+                <button id="reset-timerwatch" type="button" class="btn">reset</button>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
